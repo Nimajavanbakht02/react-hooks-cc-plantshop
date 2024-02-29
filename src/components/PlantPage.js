@@ -6,11 +6,14 @@ import Search from "./Search";
 function PlantPage({searchTerm, handleSearchTerm, plants, handleSubmit, name, image, price, setName, setImage, setPrice}) {
   return (
     <main>
-      <NewPlantForm handleSubmit={handleSubmit} name={name} image={image} price={price} setName={setName} setImage={setImage} setPrice={setPrice}/>
+      <NewPlantForm handleSubmit={handleSubmit} 
+      name={name} image={image} price={price} 
+      setName={setName} setImage={setImage} 
+      setPrice={setPrice}/>
       <Search searchTerm={searchTerm} handleSearchTerm={handleSearchTerm}/>
       <PlantList plants={plants} />
     </main>
-  );
+  )
 }
 
 export default PlantPage;
